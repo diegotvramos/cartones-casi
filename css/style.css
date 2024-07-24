@@ -1,0 +1,182 @@
+    
+
+
+/* *********************** Custom Properties ************************** */
+
+:root{
+    --first-color: #6A280F;
+    --first-alpha-color: rgba(106, 40, 15, 0.75);
+    --second-color: #EDD9C4;
+    --second-alpha-color: rgb(237, 217, 196,0.75);
+    --third-color: #576751;
+    --third-alpha-color: rgba(87, 103, 81, 0.75);
+    --white-color: #fff;
+    --gray-light-color: #f3f3f3;
+    --gray-color:#ccc;
+    --gray-dark-color: #666;
+    --black-color: #000;
+    --link-color: #6EA8FE;
+    --title-color: #333;
+    --text-color: #222;
+    --white-alpha-color: rgba(255, 255, 255, 0.5);
+    --black-alpha-color: rgba(0, 0, 0, 0.5);
+
+    /*tipografia -> importar de google Fonts*/
+    --font: "Raleway", sans-serif;
+}
+/* *********************** Reset ************************** */
+html{
+    /*modelo de caja: vamos hacer que el tamaño de la caja empieze desde el borde
+     y no desde el contenido como es por default por que si lo dejamos desde
+     el contenido corremos el riesgo de que cuando asignamos paddings o borders
+     pues los tamaños no correspondan*/
+    box-sizing: border-box;
+    font-family: var(--font); /*definimos la familia de fuente*/
+    font-size: 16px; /*tamaño de letra del html explicitamente, ¿Por que?  
+    por que como voy a estar utilizando la unidad de medida REM (rem es basado
+    en el tamaño de la tipografia de la etiqueta html*/
+
+    /*para la transicion*/
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*con el selector universal todo los elementos su contenido generado dinamicamente
+    con after y before que hereden el tamaño de caja y ¿de quien van a heredar
+    el tamaño de caja? del nodo principal que es la etiqueta html
+*/
+*,
+*::after,
+*::before{
+    box-sizing: inherit; /*hereda*/
+}
+/*por defecto trae 8 pixeles de margin*/
+body{
+    margin: 0;
+    overflow-x: hidden; /*oculta todo lo que desborda en el eje x (horizontal) oculta la barra de desplazamiento*/
+    color: var(--text-color);
+}
+
+/*Estilo a los links*/
+a{
+    color: var(--link-color);
+    transition: all 0.5s ease-out;
+}
+
+a:hover{
+    opacity: 0.75;
+}
+
+/*todo los encabezados tienen un poco de margen ariba y abajo dependiendo
+    del nivel de encabezado van variando los márgenes, lo que me gusta es
+    resetar el margen de los encabezados a 0 y ya yo darle la distancia
+    adecuada
+*/
+
+h6, h5, h4, h3, h2, h1{
+    margin: 0;
+}
+
+/*la función calc() para calcular el tamaño de la fuente de manera dinámica.*/
+/*h1{
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+  
+h3 {
+    font-size: 1.25rem;
+}
+  
+h4 {
+    font-size: 1rem;
+}
+  
+h5 {
+    font-size: 0.85rem;
+}
+  
+h6 {
+    font-size: 0.7rem;
+}*/
+
+/*De bootstrap */
+h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  @media (min-width: 1200px) {
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  @media (min-width: 1200px) {
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+
+
+
+/*Imagenes Responsivas HACK*/
+img{
+    max-width: 100%;
+    height: auto;
+    border: none; /*Mudford*/
+    display: block;/*mudford -  elimina esapcios*/
+}
+/*Estilo a los párrafos*/
+p{
+    line-height: 1.6rem;
+}
+
+/* p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  } */
+
+/* *********************** Componentes ************************** */
+/* *********************** Utilities ************************** */
+
+
+/*Sombra para cajas*/
+.box-shadow-1{
+    /* box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25); */
+    box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/* ***********************Site Styles************************** */
