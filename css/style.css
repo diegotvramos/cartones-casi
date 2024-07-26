@@ -23,6 +23,7 @@
 
     /*tipografia -> importar de google Fonts*/
     --font: "Raleway", sans-serif;
+    --header-height: 4rem;
 }
 /* *********************** Reset ************************** */
 html{
@@ -180,3 +181,21 @@ p{
 }
 
 /* ***********************Site Styles************************** */
+
+.header{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: var(--header-height); /*4rems*/
+  background-color: var(--second-color);
+}
+
+.header> .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -68,3 +68,13 @@ Este conjunto de reglas es útil para hacer que las imágenes sean responsivas y
 
 **APARTIR DE AQUI COMENZAMOS A DESARROLLAR LA PÁGINA WEB**
 
+#### haciendo la parte de Header.
+
+para el boton hamburguesa usamos la libreria: `https://jonsuh.com/hamburgers/`
+
+* mandamos a llamar la libreria de 'hamburguer css'
+
+para eso utilizamos un _cdnjs.com_ y buscamos `hamburgers`
+
+* copiamos el link y lo pegamos al head de nuestro index.
+
