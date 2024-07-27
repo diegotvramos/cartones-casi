@@ -232,6 +232,34 @@ p{
   height: 2rem; /*tamaño gemelo 2*/
 }
 
+
+
+@media screen and (min-width: 64rem){ /*respeta espacios entre el AND*/
+  .menu-btn{
+      display: none;
+  }
+  .menu{
+      position: static;
+      opacity: 1;
+      width: auto;
+      flex-direction: row;
+      pointer-events: auto;
+  }
+  .menu a{
+      padding: 0 1rem; /*solo costados*/
+  }
+  .menu a:last-child{
+      padding-right: 0; /*por que el header ya tiene un pading*/
+  }
+  .menu a:hover{
+      background-color: transparent; /*solo las letras cambian de color y no el fondo*/
+  }
+}
+
+
+
+
+
 /* ************************ -Utilities- *************************** */
 
 
@@ -253,6 +281,34 @@ p{
   display: none;
 }
 
+/*1 em es igual a 16px, 48em = 768. Esto serviria para el tamaño de una Tablet*/  
+@media screen and (min-width:48em){
+  .full-md-screen{
+      width: 100%;
+      min-height: 100vh;
+  }
+}
+/*para pc creo una media query 64rem = 1024px (el rem está basado en el Root)*/
+@media screen and (min-width:64rem){
+  .full-lg-screen{
+      width: 100%;
+      min-height: 100vh;
+  }
+
+  .text-lg-center{
+      text-align: center;
+  }
+  
+  .text-lg-left{
+      text-align: left;
+  }
+  
+  .text-lg-right{
+      text-align: right;
+  }
+}
+
+
 
 /* ************************ -Site Styles- *************************** */
 
@@ -265,7 +321,7 @@ p{
 
   z-index: 999;
   padding: 1rem;
-  width: 100%;
+  width: 100%; /*ya que perdio sus propiedades de ancho y alto*/
   height: var(--header-height); /*4rems*/
   background-color: var(--second-color);
 }
@@ -285,3 +341,18 @@ p{
   text-decoration: none; /*quitamos la linea de enlace*/
 }
 
+
+
+
+/* @media screen and (min-width:768px){ */
+@media screen and (min-width:48em){
+
+}
+
+@media screen and (min-width:64em){
+.header{
+  position: sticky;
+  top: 0;
+  /*al Padding y el Height lo heredas de header mobile*/
+}
+}

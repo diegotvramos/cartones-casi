@@ -460,3 +460,64 @@ crea un archivo JS y vinculaló al index
 ```
 
 #### Maquetando HEADER Y MENÚ para escritorio.
+
+usando la posicion fija en la cabecera para PC _FIXED_ 
+
+![FIXED](/assets/usando-fixed.png)
+
+usaremos el posicionamiento pegajoso(_Stiky_)
+
+¿Cual es la ventaja? a diferencia del position fixed no tapa el contenido que está definido en el html.(guarda su espacio?)
+
+![sticky](/assets/sticky.png)
+
+> "PARA EVITAR PROBLEMAS DE MEDIA QUERIS TE RECOMIENDO QUE LOS PONGAS AL FINAL PARA QUE POR CASCADA HAGA LO QUE TIENE QUE HACER SIN PROBLEMAS" 💀💀 ( al final las media querys) 
+
+
+el la seccion de **_site-Styles_**
+
+añadimos las media querys (ero al final de esta sección.)
+
+```css
+  /* @media screen and (min-width:768px){ */
+@media screen and (min-width:48em){
+
+}
+
+@media screen and (min-width:64em){
+.header{
+  position: sticky;
+  top: 0;
+  /*al Padding y el Height lo heredas de header mobile*/
+}
+}
+```
+
+añadimos media query al final de la sección de **_componenetes_** para el menú.
+
+```css
+@media screen and (min-width: 64rem){ /*respeta espacios entre el AND*/
+  .menu-btn{
+      display: none;
+  }
+  .menu{
+      position: static;
+      opacity: 1;
+      width: auto;
+      flex-direction: row;
+      pointer-events: auto;
+  }
+  .menu a{
+      padding: 0 1rem; /*solo costados*/
+  }
+  .menu a:last-child{
+      padding-right: 0; /*por que el header ya tiene un pading*/
+  }
+  .menu a:hover{
+      background-color: transparent; /*solo las letras cambian de color y no el fondo*/
+  }
+}
+```
+
+
+#### Maquetando sección Home y componenetes Hero Image.
