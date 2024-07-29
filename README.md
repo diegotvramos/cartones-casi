@@ -521,3 +521,159 @@ añadimos media query al final de la sección de **_componenetes_** para el men�
 
 
 #### Maquetando sección Home y componenetes Hero Image.
+
+
+"siempre vamos maquetando de el más grande a los más pequeño"
+
+> ¡Recomendación! reduce el tamaño de la imgen a 1920px de ancho, el largo lo dejas como está. Esto para que tu página web sea más fluida, ya que al pesar casi 3Mb se veia tembloroso.
+
+```html
+  <!-- sección inicio -->
+    <section id="inicio">
+        <article class="hero-image" style="--hero-image: url(../assets/hero-image.jpg); --hero-attachment:fixed;">
+            <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color)">
+                <!-- <div class="hero-image-content"> -->
+                <div>
+                    <h2 class="display-1 hero-image-title" style="--hero-text-color: var(--white-color)">
+                        Venta al por mayor
+                        <br>
+                        Cajas de embalaje
+                    </h2>
+                    <br>
+                    <a href="#contacto" class="btn">CONTÁCTAME</a>
+                </div>
+            </aside>
+        </article>
+    </section>
+```
+
+En la seccion de **_Components_**
+
+```css
+/* ***** HeroImage ***** */
+.hero-image{
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity{
+  width: 100%;
+  min-height: 100vh;
+  display: flex; /*es como si fuerra fiero aldente, puedes dar la forma que tu quieras*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color);
+}
+
+.hero-image-title{
+  color:var(--hero-text-color);
+}
+```
+
+
+Cuando necesite que un encabezado se destaque, considere usar un encabezado de visualización , un estilo de encabezado más grande y ligeramente más formal. Es un tipo de Texto Fluido/responsivo
+
+este fragmeto lo saque de Bootstrap.
+
+pegamos en la seccion de: **_Utilities_**
+
+```css
+  .display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+}
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-5 {
+    font-size: 3rem;
+  }
+}
+
+.display-6 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-6 {
+    font-size: 2.5rem;
+  }
+}
+```
+
+resultado: 
+
+![caputura-hero-image](/assets/captura-hero-image.png)
+
+**Dando estilos al boton (button)**
+
+en la sección de **_Utilities_**
+
+```css
+.btn{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+}
+```
+
+#### Marcado HTML seccion Acerca.
+
+
+
+

@@ -173,6 +173,33 @@ p{
 
 /* ************************ -Componentes- *************************** */
 
+/* ***** HeroImage ***** */
+.hero-image{
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity{
+  width: 100%;
+  min-height: 100vh;
+  display: flex; /*es como si fuerra fiero aldente, puedes dar la forma que tu quieras*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color);
+}
+
+.hero-image-content{
+  padding:1rem;
+}
+
+.hero-image-title{
+  color:var(--hero-text-color);
+}
+
 
 /******** -Menú- ********/
 
@@ -234,6 +261,9 @@ p{
 
 
 
+
+
+
 @media screen and (min-width: 64rem){ /*respeta espacios entre el AND*/
   .menu-btn{
       display: none;
@@ -260,7 +290,7 @@ p{
 
 
 
-/* ************************ -Utilities- *************************** */
+/* ************************ -Utilities- ⚪⚪⚪⚪*************************** */
 
 
 /*Sombra para cajas*/
@@ -269,8 +299,20 @@ p{
     box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
 }
 
-/*contenedor*/
+.btn{
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
 
+/*contenedor*/
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -308,7 +350,71 @@ p{
   }
 }
 
+.display-1 {
+  font-size: calc(1.625rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
 
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-2 {
+    font-size: 4.5rem;
+  }
+}
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+
+.display-5 {
+  font-size: calc(1.425rem + 2.1vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-5 {
+    font-size: 3rem;
+  }
+}
+
+.display-6 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-6 {
+    font-size: 2.5rem;
+  }
+}
 
 /* ************************ -Site Styles- *************************** */
 
