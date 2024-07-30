@@ -133,6 +133,11 @@ a{
     color: var(--link-color);
     transition: all 0.5s ease-out;
 }
+/*para quitar cuadro azul al hacer clic en icono o imagen tipo boton*/
+/* (*) atributo css que aplica a todo*/
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 a:hover{
     opacity: 0.75;
@@ -674,6 +679,82 @@ en la sección de **_Utilities_**
 
 #### Marcado HTML seccion Acerca.
 
+Según la **Encuesta Nacional sobre Disponibilidad y Uso de las Tecnologías de la Información y Comunicación en los Hogares (ENDUTIH 2018, INEGI)**, aquí están los porcentajes de uso de dispositivos electrónicos en México:
 
+- **Celular**: El **92.7%** de los usuarios de internet se conecta a través de un smartphone.
+- **Computadora portátil**: El **32.6%** utiliza una laptop.
+- **Computadora de escritorio**: El **32.0%** se conecta a través de una PC de escritorio.
+- **Tablet**: El **17.8%** utiliza una tablet¹.
 
+Es importante mencionar que estos porcentajes pueden variar según la edad y otros factores. Por ejemplo, los grupos más jóvenes tienden a usar más el celular, mientras que las computadoras de escritorio y portátiles son más comunes en adultos². Las laptops suelen ser ideales para trabajos más completos, mientras que las tablets ofrecen portabilidad y aplicaciones en un espacio más pequeño³⁴. ¡Espero que esta información te sea útil! 😊
 
+por eso debemos dar más prioridad al diseño mobil y pc y por último a la tablet.
+
+```html
+  <!-- sección Acerca -->
+     
+    <section id="acerca" class="about section container full-lg-screen">
+        <article class="text-lg-right">
+            <aside class="text-center text-lg-right">
+                <h1>Cartones Casi</h1>
+                <h6>Venta de cartones para embalaje</h6>
+            </aside>
+            <p>Cartones CASI se ha convertido en un socio de confianza para las personas que buscan <b>soluciones</b> de embalaje y materia prima para diversos productos.</p>
+            <p>Ofrecemos una amplia gama de cajas, láminas y cartones grandes de segunda mano para todo tipo de uso, también ofrecemos entregas a domicilio.</p>
+            <p></p>
+        </article>
+        <article class="">
+            <img src="assets/muchas-cajas.jpg" alt="imagen de muchas cajas">
+        </article>
+        <article class="about-card">
+            
+            <h3>Entrega Oportuna</h3>
+            <p>Entregamos a tiempo para garantizar que los planes de producción y comercialización del cliente no se vean afectados.</p>
+            
+            <!--FALTA: SVG -->
+            <h3>Material 100% recilado</h3>
+            <p>El material que ofrecemos es 100% reciclado y está en un estado muy bueno.</p>
+        </article>
+    </section>
+
+    <!-- Sección de Fotos -->
+
+    <section class="">
+        <div class="container">
+            <h3 class="section-title">Fotos de Exibición</h3>
+
+            <article class="photos-card">
+                <img src="assets/una-caja.jpg" alt="imágen de una caja">
+            </article>
+            <article class="photos-card">
+                <img src="assets/una-caja.jpg" alt="imágen de una caja">
+            </article>
+            <article class="photos-card">
+                <img src="assets/una-caja.jpg" alt="imágen de una caja">
+            </article>
+        </div>
+    </section>
+
+    <!-- sección card Productos e ¿interesado? -->
+
+    <section class="">
+        <div class="container">
+            <article class="">
+                <img src="assets/productos.jpg" alt="imagen de productos">
+                <div class="">
+                    <h3>Productos 📦</h3>
+                    <p>Proporcionamos una variedad de opciones de materiales para satisfacer las necesidades de embalaje de diferentes productos.</p>
+                    <a href="productos.html">Más detalles >></a>
+                </div>
+            </article>
+            <article class="">
+                <img src="assets/atencion-cliente (1).jpg" alt="imagen de productos">
+                <div class="">
+                    <h3>¿interesado? ☎</h3>
+                    <p>Envíe su solicitud de cotización y generaremos una cotización completa para el material que usted necesita.</p>
+                    <a href="productos.html">Más detalles >></a>
+                </div>
+            </article>
+        </div>
+    </section>
+```
