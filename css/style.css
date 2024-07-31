@@ -330,6 +330,94 @@ p{
   display: none;
 }
 
+.section{
+  padding: 2rem 1rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+/*para aplicar espaciados como en bootstrap*/
+
+
+/*margin Top*/
+.mt-0 {
+  margin-top: 0  ;
+}
+
+.mt-1 {
+  margin-top: 0.25rem  ;
+}
+
+.mt-2 {
+  margin-top: 0.5rem  ;
+}
+
+.mt-3 {
+  margin-top: 1rem  ;
+}
+
+.mt-4 {
+  margin-top: 1.5rem  ;
+}
+
+.mt-5 {
+  margin-top: 3rem  ;
+}
+
+.mt-auto {
+  margin-top: auto  ;
+}
+
+/*margin bottom*/
+.mb-0 {
+  margin-bottom: 0  ;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem  ;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem  ;
+}
+
+.mb-3 {
+  margin-bottom: 1rem  ;
+}
+
+.mb-4 {
+  margin-bottom: 2rem  ; /*lo cambie a 2 rem*/
+}
+
+.mb-5 {
+  margin-bottom: 3rem  ;
+}
+
+.mb-auto {
+  margin-bottom: auto  ;
+}
+
+
+.section-title{
+  border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  margin: 2rem auto; /*Con esto se centra y los margenes laterales se adaptan segun el espacio sobrante*/
+  padding: 0.5rem 1rem; /*nos sirve para separar el texto de los bordes de la caja*/
+  width: 280px;
+  text-align: center;
+  color: var(--title-color);
+}
+
 /*1 em es igual a 16px, 48em = 768. Esto serviria para el tamaño de una Tablet*/  
 @media screen and (min-width:48em){
   .full-md-screen{
@@ -425,6 +513,18 @@ p{
 
 /* ************************ -Site Styles- *************************** */
 
+/*  *card acerca*  */
+.about-card{
+  margin: 1rem auto; /*ariba y a los costado (para que se centre)*/
+  padding: 1rem;
+  text-align: center;
+}
+.about-card svg{
+  margin-bottom: 1.25rem; /*margen de abajo*/
+  fill: var(--first-color);
+}
+
+
 /* ******** -Cabecera- ******** */
 
 .header{
@@ -454,8 +554,14 @@ p{
   text-decoration: none; /*quitamos la linea de enlace*/
 }
 
-
-
+/* fotos de exhibición*/
+.photos-card > img{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block; /*para que  estén uno debajo del otro*/
+  border-radius: 25% 10%; /*lo saque de mozilla mdn*/
+}
 
 /* @media screen and (min-width:768px){ */
 @media screen and (min-width:48em){

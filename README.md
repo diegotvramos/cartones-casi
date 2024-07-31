@@ -4,6 +4,8 @@
 
 
 "empesar de los contornos e ir hacia adentro primero html y despues css y depues JS"
+ 
+"y empesar por la verción _mobile_, SIEMPRE"
 
 nos vamos a guiar de la **arquitectura  CSS Minimalista(StyleGuides)**
 
@@ -690,12 +692,13 @@ Es importante mencionar que estos porcentajes pueden variar según la edad y otr
 
 por eso debemos dar más prioridad al diseño mobil y pc y por último a la tablet.
 
+
 ```html
   <!-- sección Acerca -->
      
-    <section id="acerca" class="about section container full-lg-screen">
-        <article class="text-lg-right">
-            <aside class="text-center text-lg-right">
+    <section id="acerca" class=" section container ">
+        <article class="text-center">
+            <aside class="">
                 <h1>Cartones Casi</h1>
                 <h6>Venta de cartones para embalaje</h6>
             </aside>
@@ -758,3 +761,144 @@ por eso debemos dar más prioridad al diseño mobil y pc y por último a la tabl
         </div>
     </section>
 ```
+#### Maquetando la sección Acerca
+
+
+le damos padding a las secciones, y tambien añadimos las distintas posiciones de texto (centro, izquierda, derecha) .
+
+en la seccion de css llamada **_UTILITIES_** 
+
+agregamos esta clase:
+
+```css
+  .section{
+  padding: 2rem 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+```
+
+en la sección de **_Site Styles_**
+
+```css
+  .about-card{
+  margin: 1rem auto; /*ariba y a los costado (para que se centre)*/
+  padding: 1rem;
+  text-align: center;
+}
+
+.about-card svg{
+  margin-bottom: 1.25rem;
+  fill: var(--first-color);
+}
+```
+
+para aplicar espaciados utilizamos estas clases, lo saqué de bootstrap.
+
+en la sección de **_utilities_**
+
+```css
+  /*para aplicar espaciados como en bootstrap*/
+
+
+/*margin Top*/
+.mt-0 {
+  margin-top: 0  ;
+}
+
+.mt-1 {
+  margin-top: 0.25rem  ;
+}
+
+.mt-2 {
+  margin-top: 0.5rem  ;
+}
+
+.mt-3 {
+  margin-top: 1rem  ;
+}
+
+.mt-4 {
+  margin-top: 1.5rem  ;
+}
+
+.mt-5 {
+  margin-top: 3rem  ;
+}
+
+.mt-auto {
+  margin-top: auto  ;
+}
+
+/*margin bottom*/
+.mb-0 {
+  margin-bottom: 0  ;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem  ;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem  ;
+}
+
+.mb-3 {
+  margin-bottom: 1rem  ;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem  ;
+}
+
+.mb-5 {
+  margin-bottom: 3rem  ;
+}
+
+.mb-auto {
+  margin-bottom: auto  ;
+}
+
+```
+
+#### Maquetando la sección Fotos de exhibición
+
+en la sección de **_utilities_**
+
+```css
+  .section-title{
+  border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  margin: 2rem auto; /*Con esto se centra y los margenes laterales se adaptan segun el espacio sobrante*/
+  padding: 0.5rem 1rem; /*nos sirve para separar el texto de los bordes de la caja*/
+  width: 280px;
+  text-align: center;
+  color: var(--title-color);
+}
+```
+
+En la sección de **_site Styles_**
+
+```css
+  /* fotos de exhibición*/
+  .photos-card > img{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block; /*para que  estén uno debajo del otro*/
+    border-radius: 25% 10%; /*lo saque de mozilla mdn*/
+  }
+```
+
+#### Maquetando la sección empecemos
