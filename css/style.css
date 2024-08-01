@@ -180,6 +180,27 @@ p{
 
 /* ************************ -Componentes- *************************** */
 
+/* *card */
+
+.card{
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  /* background-image: linear-gradient(to right, rgb(96, 56, 19), rgb(178, 159, 148)); */
+  background-color: var(--white-color);
+}
+.card-container{
+  padding: 1rem;
+}
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
 /* ***** HeroImage ***** */
 .hero-image{
   background-image: var(--hero-image);
@@ -206,6 +227,8 @@ p{
 .hero-image-title{
   color:var(--hero-text-color);
 }
+
+
 
 
 /******** -Menú- ********/
@@ -523,6 +546,28 @@ p{
   margin-bottom: 1.25rem; /*margen de abajo*/
   fill: var(--first-color);
 }
+
+.bg-color-main{
+  background-color: var(--gray-light-color);
+}
+
+/*card*/
+
+.card h3{
+  border-bottom: medium solid var(--first-color);
+  margin: 1rem auto; /*ariba y bajo, Costados*/
+  padding: 0.5rem 0;
+  color: var(--title-color);
+}
+
+.footer{
+  margin-bottom: var(--header-height);
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--third-color);
+}
+
 
 
 /* ******** -Cabecera- ******** */

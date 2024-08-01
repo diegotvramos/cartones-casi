@@ -802,6 +802,10 @@ en la sección de **_Site Styles_**
   margin-bottom: 1.25rem;
   fill: var(--first-color);
 }
+.bg-color-main{
+  background-color: var(--gray-light-color);
+}
+
 ```
 
 para aplicar espaciados utilizamos estas clases, lo saqué de bootstrap.
@@ -902,3 +906,55 @@ En la sección de **_site Styles_**
 ```
 
 #### Maquetando la sección empecemos
+
+en la sección de **_Componentes_**
+
+```css
+
+  /* *card */
+
+.card{
+  width: 18rem;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  /* background-image: linear-gradient(to right, rgb(96, 56, 19), rgb(178, 159, 148)); */
+}
+
+.card-container{
+  padding: 1rem;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+```
+
+
+En la sección de **_Site Styles_**
+
+```css
+  /*card*/
+
+.card h3{
+  border-bottom: medium solid var(--first-color);
+  margin: 1rem auto; /*ariba y bajo, Costados*/
+  padding: 0.5rem 0;
+  color: var(--title-color);
+}
+
+.footer{
+  margin-bottom: var(--header-height);
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--third-color);
+}
+```
+#### Marcado html de la página Productos
+
+
+
