@@ -180,6 +180,35 @@ p{
 
 /* ************************ -Componentes- *************************** */
 
+
+/* Botones */
+.btn{
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+
+.btn-small{
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+  display: inline-block;
+  width: 10rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+
+
 /* *card */
 
 .card{
@@ -290,6 +319,16 @@ p{
 }
 
 
+.section-title{
+  border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  margin: 2rem auto; /*Con esto se centra y los margenes laterales se adaptan segun el espacio sobrante*/
+  padding: 0.5rem 1rem; /*nos sirve para separar el texto de los bordes de la caja*/
+  width: 280px;
+  text-align: center;
+  color: var(--title-color);
+}
+
 
 
 
@@ -322,6 +361,7 @@ p{
 
 /* ************************ -Utilities- ⚪⚪⚪⚪*************************** */
 
+/*Si no podemos nos guiamos de botstrap*/
 
 /*Sombra para cajas*/
 .box-shadow-1{
@@ -329,18 +369,7 @@ p{
     box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
 }
 
-.btn{
-  border-radius: 0.5rem;
-  padding: 1rem;
-  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
-  display: inline-block;
-  width: 200px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: var(--white-color);
-  background-color: var(--first-color);
-}
+
 
 /*contenedor*/
 .container{
@@ -429,17 +458,64 @@ p{
 .mb-auto {
   margin-bottom: auto  ;
 }
+/*aplica margen a los 4 lados*/
 
-
-.section-title{
-  border-top: thin solid var(--first-color);
-  border-bottom: thin solid var(--first-color);
-  margin: 2rem auto; /*Con esto se centra y los margenes laterales se adaptan segun el espacio sobrante*/
-  padding: 0.5rem 1rem; /*nos sirve para separar el texto de los bordes de la caja*/
-  width: 280px;
-  text-align: center;
-  color: var(--title-color);
+.m-0 {
+  margin: 0  ;
 }
+
+.m-1 {
+  margin: 0.25rem  ;
+}
+
+.m-2 {
+  margin: 0.5rem  ;
+}
+
+.m-3 {
+  margin: 1rem  ;
+}
+
+.m-4 {
+  margin: 1.5rem  ;
+}
+
+.m-5 {
+  margin: 3rem  ;
+}
+
+.m-auto {
+  margin: auto  ;
+}
+
+
+/*aplica padding a los 4 lados*/
+
+.p-0 {
+  padding: 0  ;
+}
+
+.p-1 {
+  padding: 0.25rem  ;
+}
+
+.p-2 {
+  padding: 0.5rem  ;
+}
+
+.p-3 {
+  padding: 1rem  ;
+}
+
+.p-4 {
+  padding: 1.5rem  ;
+}
+
+.p-5 {
+  padding: 3rem  ;
+}
+
+
 
 /*1 em es igual a 16px, 48em = 768. Esto serviria para el tamaño de una Tablet*/  
 @media screen and (min-width:48em){
@@ -560,6 +636,15 @@ p{
   color: var(--title-color);
 }
 
+.color-list b{
+  color:var(--first-color);
+}
+
+.color-list ul{
+  padding-inline-start: 1rem;
+}
+
+
 .footer{
   margin-bottom: var(--header-height);
   padding: 0.5rem;
@@ -590,6 +675,7 @@ p{
   justify-content: space-between;
   align-items: center;
 }
+
 
 .logo a{
   color: var(--first-color);

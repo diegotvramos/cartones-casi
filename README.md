@@ -907,6 +907,7 @@ En la sección de **_site Styles_**
 
 #### Maquetando la sección empecemos
 
+
 en la sección de **_Componentes_**
 
 ```css
@@ -955,6 +956,132 @@ En la sección de **_Site Styles_**
 }
 ```
 #### Marcado html de la página Productos
+
+
+
+```html
+          <!-- sección products-cards -->
+        <section class="section">
+            <div class="container cards-container">
+               
+    
+                <article class="card p-0">
+                    <img src="assets/productos.jpg" alt="imagen de productos">
+                    <div class="card-container">
+                        <h3 class="text-center">Exportación 📦</h3>
+                        <small class="color-list">
+                            <ul>
+                                <li>
+                                    <b>Cantidad mínima de pedido:</b> xx
+                                </li>
+                                <li>
+                                    <b>tiempo de entrega:</b> 1-5 días hábiles
+                                </li>
+                            </ul>
+                            <br>    
+                        </small>
+                        <p class="text-center">
+                            <a href="productos.html" class="btn-small"> <b>Contactar Ahora</b></a>
+                        </p>
+                    </div>
+                </article>
+```
+
+la UL tiene por defecto 40px de padding inicial y nosotros lo vamos a reducir a 1rem
+
+![padding-ul](/assets/padding-ul.png)
+en la sección de **_site Stiles_**
+
+```css
+  .color-list b{
+  color:var(--first-color);
+}
+
+.color-list ul{
+  padding-inline-start: 1rem;
+}
+```
+en la sección de **_utilities_** usamos estas utilidades de Bootstrap para quitar o agrear paddigs
+
+```css
+  /*aplica margen a los 4 lados*/
+
+.m-0 {
+  margin: 0  ;
+}
+
+.m-1 {
+  margin: 0.25rem  ;
+}
+
+.m-2 {
+  margin: 0.5rem  ;
+}
+
+.m-3 {
+  margin: 1rem  ;
+}
+
+.m-4 {
+  margin: 1.5rem  ;
+}
+
+.m-5 {
+  margin: 3rem  ;
+}
+
+.m-auto {
+  margin: auto  ;
+}
+
+
+/*aplica padding a los 4 lados*/
+
+.p-0 {
+  padding: 0  ;
+}
+
+.p-1 {
+  padding: 0.25rem  ;
+}
+
+.p-2 {
+  padding: 0.5rem  ;
+}
+
+.p-3 {
+  padding: 1rem  ;
+}
+
+.p-4 {
+  padding: 1.5rem  ;
+}
+
+.p-5 {
+  padding: 3rem  ;
+}
+```
+
+
+en la sección de componentes por que un boton es un componente **_components_**
+
+```css
+  .btn-small{
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+  display: inline-block;
+  width: 10rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+```
+
+#### Maquetando especificaciónes de Cada Producto. (incluye fotos) las que faltan
+
 
 
 
