@@ -1082,6 +1082,33 @@ en la sección de componentes por que un boton es un componente **_components_**
 
 #### Maquetando especificaciónes de Cada Producto. (incluye fotos) las que faltan
 
+Hacemos que las imagenes sean un enlace que nos lleve a otra página.
+
+y le damos un efecto Zoom a las imágenes. todo esto en la sección: **_My Styles_**
+
+```css
+/*Efecto Zoom  las imágenes*/
+.img-card-container{
+width: 18rem;
+height: 18rem;
+display: block; /*la etiqueta es una A y se comporta en linea, yo quiero que se comporte en bloque.*/
+overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresalido*/
+}
+
+.img-zoom{
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+ /* object-fit: cover; */
+  /* cursor: pointer; */
+}
+
+.img-zoom:hover{
+  transform: scale(1.2);
+}
+```
+
+
 
 
 
