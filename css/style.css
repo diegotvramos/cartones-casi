@@ -329,8 +329,12 @@ p{
   color: var(--title-color);
 }
 
-
-
+.Subtitle{
+  /* border-bottom: medium solid var(--first-color); */
+  margin: 1rem auto;
+  padding: 0.5rem 0;
+  color: var(--first-color);
+}
 
 
 @media screen and (min-width: 64rem){ /*respeta espacios entre el AND*/
@@ -644,7 +648,6 @@ p{
   padding-inline-start: 1rem;
 }
 
-
 .footer{
   margin-bottom: var(--header-height);
   padding: 0.5rem;
@@ -713,6 +716,12 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
 
 .img-zoom:hover{
   transform: scale(1.2);
+}
+
+.tamaño-800{
+  /* max-width: 800px; */
+  max-width: 100vh;
+   /* max-height: 100vh; */
 }
 
 

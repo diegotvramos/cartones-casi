@@ -1108,7 +1108,89 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
 }
 ```
 
+> Para el carousel usé el componente carousel de Bootstrap.
+
+Maquetando Uno de los productos
+
+```html
+   <section class="section container p-3">
+
+            <article>
+                <!-- añadimo para que comienze a corer automáticamente despues de la primera interracion -->
+                <div id="carousel-img" class="carousel slide tamaño-800" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carousel-img" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carousel-img" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carousel-img" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carousel-img" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/exportación-men.jpg" class="d-block w-100" alt="primera imágen">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/exportacion-women-1.jpg" class="d-block w-100" alt="segunda imágen">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/exportacion-women-2.jpg" class="d-block w-100" alt="Tercera imágen">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/producto-women-3.jpg" class="d-block w-100" alt="Cuarta Imagen">
+                      </div>
+                    </div>
+                    <!-- control de izquierda y derecha -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-img" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-img" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </article>
+
+            <article class="">
+                <h3 class="text-center Subtitle">Cartón Exportación</h3>
+                <p>
+                    Las cajas de embalaje <b>Exportación</b> ofrecen una solución de embalaje para una variedad de productos.
+                </p>
+                <p>
+                    Fabricadas con cartón resistente de doble hoja, estas cajas garantizan durabilidad y proteccion del contenido durante el almacenamiento y el transporte.
+                </p>
+            </article>
+
+            <article class="">
+                <h3 class="text-center Subtitle"><b>Especificaciones</b></h3>
+                <!-- <span> se comporta en linea, P: se comporta en bloque -->
+                <span class="color-list">
+                    <ul >
+                        <li class="mb-2"><b>Dimenciones: </b>L= , A= .</li>
+                        <li class="mb-2"><b>Uso: </b>industrial, prendas de vestir, mudanzas, almacenamiento.</li>
+                        <li class="mb-2"><b>Precio Final: </b> se adaptará a la cantidad que necesite.</li>
+                    </ul>
+                </span>
+                <br>
+                <!-- podemos colocar un pequeño formulario con el nombre preselecíonado más un correo o telefono -->
+                <p class="text-center">
+                    <a href="contacto.html" class="btn-small"> Contactar Ahora</a>
+                </p>
+            </article>
+        </section>
+```
+
+en la sección de **_Components_** creamos el estilo para los subtitulos
+
+```css
+  .Subtitle{
+    /* border-bottom: medium solid var(--first-color); */
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    color: var(--first-color);
+  }
+```
 
 
+#### maquetando para cada producto y maquetando la seccion de CONTACTENOS/CONTACTOS
 
 
