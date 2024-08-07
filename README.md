@@ -1193,4 +1193,111 @@ en la sección de **_Components_** creamos el estilo para los subtitulos
 
 #### maquetando para cada producto y maquetando la seccion de CONTACTENOS/CONTACTOS
 
+vamos a copiar el Svg loader y le cambiamos el color.
 
+En la sección de **_Componentes_**
+
+damos estilos al formulario contacto.
+```css
+  /* ***** Contact Form ***** */
+
+.contact-form {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: var(--white-color);
+}
+/*oye, todo los elementos que son hijos directos de contact form sin 
+importar que tipo de etiqueta o selector es, le vas a aplicar lo siguiente
+*/
+.contact-form > *{
+  padding: 0.5rem;
+  margin: 1rem auto;/*arriba y abajo, automático a los lados*/
+  display: block;
+  width: 100%; /*le damos el 100% de su contenedor*/
+}
+
+/*todo los imputs que están dentro del contact form y toda las text-areas
+que estén dentro del contar-form aplicales:*/
+
+.contact-form input,
+.contact-form textarea{
+  font-size: 0.85rem;
+  font-family: var(--font);
+}
+
+.contact-form input{
+  border: 0;/*quitamos todo los bordes*/
+  padding-left: 0; /*esto es para que el texto se alinea al borde asé está en figma*/
+  border-bottom: thin solid var(--first-color);
+
+}
+
+.contact-form textarea {
+  border: thin solid var(--first-color);
+  resize: none; /*para desaparecer el triangulito*/
+}
+
+/*el boton SUBMIT- Enviar*/
+.contact-form input[type="submit"]{
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+/*btn Es el nombre de los botones en bootstrap y hay incompatibilidad Con BTN de nuestros estilos propios*/
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+.contact-form input[type="submit"]:hover{
+  opacity: 0.75;
+}
+
+/*dentro de contact-form a todo los elementos hijos pero que tengan
+la pseudoclase Placeholder ponele:*/
+.contact-form *::placeholder{
+  color: var(--gray-dark-color);
+}
+
+.contact-form-response{
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+/*rellenamos el svg*/
+.contact-form-response svg{
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--first-color);
+}
+
+/*El elmento que tenga la clase modal y que enta el Id = gracias 
+cuando sea target de la página aplicale:*/
+.modal#gracias:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+```
+
+
+
+_Aspect-ratio_ en Bootstrap nos permite agregar un video de Youtube o un Mapa de google maps con tamaños proporcionales si el orden no te gusta lo puedes invertir con la clase de bootstrap: _`order-lg-1`_
+
+queda de esta manera:
+
+```html
+   <article>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1491.3245519512043!2d-68.20594800723673!3d-16.483140265966842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ede25cd741f53%3A0x8a8ee4fb45790868!2sPlaza%20Villa%20Ingenio!5e1!3m2!1ses!2sbo!4v1722997174457!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+```

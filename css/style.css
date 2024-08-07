@@ -208,7 +208,6 @@ p{
   background-color: var(--first-color);
 }
 
-
 /* *card */
 
 .card{
@@ -227,6 +226,94 @@ p{
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+/* ***** Contact Form ***** */
+
+.contact-form {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: var(--white-color);
+}
+/*oye, todo los elementos que son hijos directos de contact form sin 
+importar que tipo de etiqueta o selector es, le vas a aplicar lo siguiente
+*/
+.contact-form > *{
+  padding: 0.5rem;
+  margin: 1rem auto;/*arriba y abajo, automático a los lados*/
+  display: block;
+  width: 100%; /*le damos el 100% de su contenedor*/
+}
+
+/*todo los imputs que están dentro del contact form y toda las text-areas
+que estén dentro del contar-form aplicales:*/
+
+.contact-form input,
+.contact-form textarea{
+  font-size: 0.85rem;
+  font-family: var(--font);
+}
+
+.contact-form input{
+  border: 0;/*quitamos todo los bordes*/
+  padding-left: 0; /*esto es para que el texto se alinea al borde asé está en figma*/
+  border-bottom: thin solid var(--first-color);
+
+}
+
+.contact-form textarea {
+  border: thin solid var(--first-color);
+  resize: none; /*para desaparecer el triangulito*/
+}
+
+/*el boton SUBMIT- Enviar*/
+.contact-form input[type="submit"]{
+  margin-top: 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+/*btn Es el nombre de los botones en bootstrap y hay incompatibilidad Con BTN de nuestros estilos propios*/
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /*los enlaces trabajan en linea pero quiero que tenga caracteristicas de linea y bloque*/
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+.contact-form input[type="submit"]:hover{
+  opacity: 0.75;
+}
+
+/*dentro de contact-form a todo los elementos hijos pero que tengan
+la pseudoclase Placeholder ponele:*/
+.contact-form *::placeholder{
+  color: var(--gray-dark-color);
+}
+
+.contact-form-response{
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+/*rellenamos el svg*/
+.contact-form-response svg{
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--first-color);
+}
+
+/*El elmento que tenga la clase modal y que enta el Id = gracias 
+cuando sea target de la página aplicale:*/
+.modal#gracias:target{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 
@@ -621,6 +708,7 @@ p{
   margin: 1rem auto; /*ariba y a los costado (para que se centre)*/
   padding: 1rem;
   text-align: center;
+  background-color: var(--white-color);
 }
 .about-card svg{
   margin-bottom: 1.25rem; /*margen de abajo*/
