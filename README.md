@@ -1343,7 +1343,34 @@ queda de esta manera:
 
 #### Arquitectura para ordenar mis archivos JavaScript.
 
+
+no olvides referenciar correctamente el archivo js a el archivo Html, de esta manera:
+
+```html
+  <script src="js/app.js" type="module"></script>
+```
+
+
+para modularizar borra el antiguo: 
+
+```js
+  ((d) => {})(document);
+
+```
+
+Y reemplazalo por esto:
+
+```js
+  const d = document;
+
+export default function slider() {}
+```
+
+
+
 Las buenas prácticas para estructurar mis archivos javaScript son:
+
+
 
 1. Modularización
 
@@ -1462,7 +1489,7 @@ export default function slider() {
 }
 
 ```
-quiero que sin un modulo falla, los demás sigan ejecutandose de este fragmento de código: d.addEventListener
+quiero que sin un modulo falla, los demás sigan ejecutandose de este fragmento de código:
 
 ```js
 ("DOMContentLoaded", (e) => {

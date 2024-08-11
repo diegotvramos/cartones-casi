@@ -1,6 +1,5 @@
 
 
-
 // importándo módulos
 import menu from "./menu.js";
 import slider from "./carousel.js";
@@ -22,7 +21,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     } catch (error) {
         console.error("Error en contact:", error);
     }
-    
+
     try {
         menu();
     } catch (error) {
