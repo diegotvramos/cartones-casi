@@ -1322,8 +1322,9 @@ queda de esta manera:
   transition: all 1s;
 }
 
-.modal-content{
+.modal-container{ /*modal-content es el mismo nombre que usa Bootstrap y tiene preferencia.*/
   position: relative;
+  pointer-events: none;
 }
 
 .modal-close{
@@ -1338,3 +1339,165 @@ queda de esta manera:
   fill: var(--first-color);
 }
 ```
+
+
+#### Arquitectura para ordenar mis archivos JavaScript.
+
+Las buenas prácticas para estructurar mis archivos javaScript son:
+
+1. Modularización
+
+```js
+  // math.js
+export function sum(x, y) {
+    return x + y;
+}
+
+// app.js
+import { sum } from './math.js';
+console.log(sum(2, 3));
+
+```
+2. Convenciones de Nombres: Usa camelCase para variables y funciones, PascalCase para clases, y kebab-case para nombres de archivos.
+
+```js
+  // good-practice.js
+class UserAccount {
+    constructor(userName) {
+        this.userName = userName;
+    }
+}
+```
+
+3. Estructura de carpetas.
+
+/src
+    /components
+    /models
+    /services
+    app.js
+    index.html
+
+4. Separación de Responsabilidades:
+  
+```js
+    // dataAccess.js
+export function getData() {
+    // Fetch data from an API or database
+}
+
+// logic.js
+import { getData } from './dataAccess.js';
+export function processData() {
+    // Process the data
+}
+
+```
+5. Uso de Herramientas de Construcción y Linters
+
+6. Manejo de Errores:
+
+```js
+  try {
+    // Código que puede lanzar un error
+} catch (error) {
+    console.error("Se produjo un error:", error);
+}
+```
+Estas prácticas te ayudan a mantener tu código organizado.
+
+
+Si el archivo carousel.js está en el mismo directorio que tu archivo actual, deberías usar:
+
+a este código añade un slider infinito con intervalos de 3segundos.
+
+**Usando Copilot**
+
+a este fragmento de código quiero que cuando el usuario comienze a precionar el boton de next o prev, el intervalo de los 3 segundos se reinicie:
+
+Para reiniciar el intervalo de 3 segundos cuando el usuario presione los botones “next” o “prev”, puedes usar clearInterval y setInterval dentro del evento de clic. Aquí tienes cómo podrías modificar tu código:
+
+```js
+  const d = document;
+
+export default function slider() {
+    const $nextBtn = d.querySelector(".slider-btns .next"),
+          $prevBtn = d.querySelector(".slider-btns .prev"),
+          $slides = d.querySelectorAll(".slider-slide");
+
+    let i = 0;
+    let interval;
+
+    const changeSlide = (direction) => {
+        $slides[i].classList.remove("active");
+        i = (i + direction + $slides.length) % $slides.length;
+        $slides[i].classList.add("active");
+    };
+
+    const startInterval = () => {
+        interval = setInterval(() => {
+            changeSlide(1);
+        }, 3000);
+    };
+
+    const resetInterval = () => {
+        clearInterval(interval);
+        startInterval();
+    };
+
+    d.addEventListener("click", (e) => {
+        if (e.target === $prevBtn) {
+            e.preventDefault();
+            changeSlide(-1);
+            resetInterval();
+        }
+        if (e.target === $nextBtn) {
+            e.preventDefault();
+            changeSlide(1);
+            resetInterval();
+        }
+    });
+
+    startInterval();
+}
+
+```
+quiero que sin un modulo falla, los demás sigan ejecutandose de este fragmento de código: d.addEventListener
+
+```js
+("DOMContentLoaded", (e) => {
+    menu();
+    slider();
+    contact();
+});
+```
+
+¡Claro! Para asegurarte de que si un módulo falla, los demás sigan ejecutándose, puedes usar bloques try...catch alrededor de cada llamada de función. 
+
+```js
+d.addEventListener("DOMContentLoaded", (e) => {
+    try {
+        menu();
+    } catch (error) {
+        console.error("Error en menu:", error);
+    }
+
+    try {
+        slider();
+    } catch (error) {
+        console.error("Error en slider:", error);
+    }
+
+    try {
+        contact();
+    } catch (error) {
+        console.error("Error en contact:", error);
+    }
+});
+
+```
+
+♥💞💞💞💞♥
+
+#### ESTILOS AL SLIDER.
+
