@@ -1528,3 +1528,103 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
 #### ESTILOS AL SLIDER.
 
+quise copiar el icono de bootstrap pero veo que el click no reconoce al Svg solo reconoce el contenedor:
+
+```css
+  .carousel-control-prev,
+.carousel-control-next {
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 15%;
+  padding: 0;
+  color: #2acb95;
+  text-align: center;
+  background: none;
+  border: 1;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+```
+
+En la sección de **_Components_** vamos a dar estilos al carousel elegante, minimalista y moderno
+
+```css
+  /**    Responsive Slider    **/
+
+
+.slider{
+  position: relative;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.slider-content{
+  position: relative;
+  height: 60vh;
+}
+/*el siguiente elemento hijo dentro del slider son los botones las flechitas se apilan a la imagen 
+  las demas diapositivas se va desbordando
+*/
+
+.slider-slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.slider-slide img{
+  height: inherit; /*la altura lo hereda*/
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 30%;
+}/*"contain"= la adapta a la altura. buena opcion
+  "cover"= la imagen se adapta al ancho del contenedor.
+*/
+
+.slider-slide.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-btns{
+  position: absolute;
+  width: 100%;
+  /* top: 0%; */
+  top: 50%; /* Mueve el contenedor al centro vertical */
+  transform: translateY(-50%); /* Ajusta para centrar exactamente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.slider a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.slider a:hover {
+  color: 	rgb(106, 40, 15);
+}
+```

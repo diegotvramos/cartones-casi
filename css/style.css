@@ -471,14 +471,17 @@ cuando sea target de la página aplicale:*/
 
 .slider{
   position: relative;
-  border: thin solid black;
-  width: 80%;
+  width: 100%;
   margin: 1rem auto;
   text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
-.slider-slides{
+
+.slider-content{
   position: relative;
-  height: 400px;
+  height: 60vh;
 }
 /*el siguiente elemento hijo dentro del slider son los botones las flechitas se apilan a la imagen 
   las demas diapositivas se va desbordando
@@ -512,29 +515,30 @@ cuando sea target de la página aplicale:*/
 .slider-btns{
   position: absolute;
   width: 100%;
-  top: 50%;
+  /* top: 0%; */
+  top: 50%; /* Mueve el contenedor al centro vertical */
+  transform: translateY(-50%); /* Ajusta para centrar exactamente */
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 3em;
   font-weight: bold;
 }
 
 .slider a{
-  display: block;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: thin solid #000;
-  text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.slider a:hover{
-  color: #4d4d4d;
+.slider a:hover {
+  color: 	rgb(106, 40, 15);
 }
-
 
 
 @media screen and (min-width: 64rem){ /*respeta espacios entre el AND*/
