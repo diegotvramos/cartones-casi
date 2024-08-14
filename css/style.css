@@ -248,7 +248,7 @@ p{
 importar que tipo de etiqueta o selector es, le vas a aplicar lo siguiente
 */
 .contact-form > *{
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   margin: 1rem auto;/*arriba y abajo, automático a los lados*/
   display: block;
   width: 100%; /*le damos el 100% de su contenedor*/
@@ -267,7 +267,8 @@ que estén dentro del contar-form aplicales:*/
   border: 0;/*quitamos todo los bordes*/
   padding-left: 0.5rem; /*esto es para que el texto se alinea al borde asé está en figma*/
   border-bottom: thin solid var(--first-color);
-
+  width: 100%;
+  margin: 0.5rem auto;
 }
 
 .contact-form textarea {
@@ -959,8 +960,6 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
     /* gap: 0rem; */
     /* align-items: start; */
 
-
-
     display: grid;
     grid-template-columns: repeat(2,1fr);
   /* align-items: center; */
@@ -1005,6 +1004,12 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
   grid-column: span 1;
 }
 
+.inputs-md{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
 .service-cards{
   display: grid;
   grid-template-columns: repeat(2,48.96%);
@@ -1021,9 +1026,114 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
   /*al Padding y el Height lo heredas de header mobile*/
 }
 
+.about-lg{
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  /* display: flex; */
+  align-content: center;
+  
+}
+
+
+.about-card{
+  margin: 0rem auto; /*ariba y a los costado (para que se centre)*/
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+.about-card-lg{
+  margin: 0rem auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+
+.cards-container-lg {
+  /* gap: 0rem; */
+  /* align-items: start; */
+  
+  grid-template-columns: repeat(3, 1fr);
+  /* align-items: center; */
+  /* align-content: start; */
+  /* justify-content: center; */
+  justify-items: center;
+  row-gap: 2rem;
+  column-gap: 0rem;
+}
+
+.contact-lg{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+.contact-form {
+  margin: 0rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: var(--white-color);
+}
+
+
+
+
+.service-cards {
+  /* display: grid; */
+  grid-template-columns: 1fr;
+  /* justify-content: space-between; */
+  /* align-content: center; */
+  margin-top: 0rem;
+}
+
+.service-cards-lg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.slider {
+  position: relative;
+  width: 60%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.slider-slide img{
+  height: inherit; /*la altura lo hereda*/
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.slider-content{
+  position: relative;
+  height: 80vh;
+}
+
 
 .container-product {
-  height: 70vh;
+  height: 100vh;
   align-content: center;
   display: grid;
   /* grid-template-columns: 1fr; */
@@ -1033,4 +1143,19 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
 .item1, .item2, .item3 {
   grid-column: span 1;
 }
+
+
+.footer{
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--third-color);
 }
+
+.section{
+  padding: var(--header-height) 1rem;
+}
+
+}
+

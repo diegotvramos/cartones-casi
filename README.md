@@ -1682,3 +1682,164 @@ Este CSS hará que el primer elemento ocupe el 100% del ancho de la pantalla cua
 
 #### Maquetando para la version Descktop
 
+Para adaptar la página web al tamaño del escritorio reutilicé varias clases y los renombre con el prefijo `-LG` al final de la clase reutilizada. 
+
+> recuerda; el tamaño minimo para que sea considerada pc es de 64rems. 1024px
+
+En la sección de: **_site-styles_** creamos las siguientes clases para el tamaño de monitor 1024px o superior.
+
+```css
+  @media screen and (min-width:64em){
+.header{
+  position: sticky;
+  top: 0;
+  /*al Padding y el Height lo heredas de header mobile*/
+}
+
+.about-lg{
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  /* display: flex; */
+  align-content: center;
+  
+}
+
+
+.about-card{
+  margin: 0rem auto; /*ariba y a los costado (para que se centre)*/
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+.about-card-lg{
+  margin: 0rem auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--white-color);
+  width: 100%;
+}
+
+
+.cards-container-lg {
+  /* gap: 0rem; */
+  /* align-items: start; */
+  
+  grid-template-columns: repeat(3, 1fr);
+  /* align-items: center; */
+  /* align-content: start; */
+  /* justify-content: center; */
+  justify-items: center;
+  row-gap: 2rem;
+  column-gap: 0rem;
+}
+
+.contact-lg{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 1rem;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+.contact-form {
+  margin: 0rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: var(--white-color);
+}
+
+
+
+
+.service-cards {
+  /* display: grid; */
+  grid-template-columns: 1fr;
+  /* justify-content: space-between; */
+  /* align-content: center; */
+  margin-top: 0rem;
+}
+
+.service-cards-lg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.slider {
+  position: relative;
+  width: 60%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.slider-slide img{
+  height: inherit; /*la altura lo hereda*/
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.slider-content{
+  position: relative;
+  height: 80vh;
+}
+
+
+.container-product {
+  height: 100vh;
+  align-content: center;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  column-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item1, .item2, .item3 {
+  grid-column: span 1;
+}
+
+
+.footer{
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--third-color);
+}
+
+.section{
+  padding: var(--header-height) 1rem;
+}
+
+}
+```
+
+tambien hicimos mejoras a las cards de "index.html"
+
+#### Añadiendo productos a la página + fotos.
+
+Recomendacion para el tamaño de las fotos.
+
+para las targetas: el tamaño tiene que ser cuadrado, es decir 1 x 1.
+
+El tamaño de las targetas para la sección de "fotos de exhibición" debern ser de tamaño rectangular, es decir: 16 x 9.
+
+El tamaño para la "hero image" debe ser tambien de 16 x 9.
+
+para el carousel de productos deben ser de tamaño cuadrado: 1 x 1.
