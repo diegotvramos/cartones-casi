@@ -221,10 +221,18 @@ p{
   padding: 1rem;
 }
 .cards-container{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem; */
+
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  /* align-items: center; */
+  /* align-content: start; */
+  /* justify-content: center; */
+  justify-items: center;
   gap: 2rem;
 }
 
@@ -737,12 +745,13 @@ cuando sea target de la página aplicale:*/
       width: 100%;
       min-height: 100vh;
   }
+
+
 }
 /*para pc creo una media query 64rem = 1024px (el rem está basado en el Root)*/
 @media screen and (min-width:64rem){
   .full-lg-screen{
       width: 100%;
-      min-height: 100vh;
   }
 
   .text-lg-center{
@@ -832,6 +841,7 @@ cuando sea target de la página aplicale:*/
   padding: 1rem;
   text-align: center;
   background-color: var(--white-color);
+  width: 100%;
 }
 .about-card svg{
   margin-bottom: 1.25rem; /*margen de abajo*/
@@ -940,6 +950,68 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
 /* @media screen and (min-width:768px){ */
 @media screen and (min-width:48em){
 
+  .cards-container {
+    
+    
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    /* gap: 0rem; */
+    /* align-items: start; */
+
+
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  /* align-items: center; */
+  /* align-content: start; */
+  /* justify-content: center; */
+    justify-items: center;
+    row-gap: 2rem;
+    column-gap: 0rem;
+
+}
+/* .card{
+  /* width: 100%; */
+/*} */
+
+
+/* .container-product{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); */
+  /* grid-template-rows: auto auto; /* Dos filas automáticas */
+/*} */
+
+/* .item1 {
+  grid-column: 1 / -1; /* Ocupa toda la fila */
+/* } 
+
+.item2, .item3 {
+  grid-column: span 1; /* Cada uno ocupa una columna */
+/*} */
+
+
+.container-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.item1 {
+  grid-column: 1 / -1;
+}
+
+.item2, .item3 {
+  grid-column: span 1;
+}
+
+.service-cards{
+  display: grid;
+  grid-template-columns: repeat(2,48.96%);
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 2rem;
+}
 }
 
 @media screen and (min-width:64em){
@@ -947,5 +1019,18 @@ overflow: hidden;/*esto para que cuando agrandemos la imagen no se vea sobresali
   position: sticky;
   top: 0;
   /*al Padding y el Height lo heredas de header mobile*/
+}
+
+
+.container-product {
+  height: 70vh;
+  align-content: center;
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  column-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item1, .item2, .item3 {
+  grid-column: span 1;
 }
 }

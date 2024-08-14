@@ -1551,7 +1551,7 @@ quise copiar el icono de bootstrap pero veo que el click no reconoce al Svg solo
 }
 ```
 
-En la sección de **_Components_** vamos a dar estilos al carousel elegante, minimalista y moderno
+En la sección de **_Components_** vamos a dar estilos al carousel Artesanal elegante, minimalista y moderno
 
 ```css
   /**    Responsive Slider    **/
@@ -1628,3 +1628,57 @@ En la sección de **_Components_** vamos a dar estilos al carousel elegante, min
   color: 	rgb(106, 40, 15);
 }
 ```
+
+#### Maquetando para la version tablet:
+
+Para centrar un elemento horizontalmente en un contenedor con `display: grid`, puedes usar la propiedad `justify-items`. Aquí tienes un ejemplo de cómo podrías ajustar tu código:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center; /* Esta propiedad centra los elementos horizontalmente */
+}
+```
+
+Si necesitas centrar el contenido dentro de un elemento específico, puedes usar `justify-self` en lugar de `justify-items`:
+
+```css
+.item {
+  justify-self: center; /* Centra este elemento específico horizontalmente */
+}
+```
+creame un grid para cuando pase de los 600 px el primer item ocupe el 100% de la pantalla, y los otros 2  esten abajo y juntos, ocupando el 50% de la pantalla, haslo con Grid de css: te mando el html: 
+¡Claro! Aquí tienes el CSS para lograr el diseño que mencionas usando CSS Grid:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.item1 {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item1 {
+    grid-column: 1 / -1;
+  }
+
+  .item2, .item3 {
+    grid-column: span 1;
+  }
+}
+```
+
+Este CSS hará que el primer elemento ocupe el 100% del ancho de la pantalla cuando la ventana sea mayor a 600px, y los otros dos elementos se coloquen abajo, cada uno ocupando el 50% del ancho de la pantalla.
+
+
+#### Maquetando para la version Descktop
+
