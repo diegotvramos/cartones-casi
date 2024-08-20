@@ -1843,3 +1843,9 @@ El tamaño de las targetas para la sección de "fotos de exhibición" debern ser
 El tamaño para la "hero image" debe ser tambien de 16 x 9.
 
 para el carousel de productos deben ser de tamaño cuadrado: 1 x 1.
+
+Para la descripción podemos ayudarnos de la IA.
+
+> hazme una descripción corta para vender en linea acerca de las Láminas de Cartón Corrugado y también menciona los posibles usos que se le puede dar.
+
+hacer la 140
