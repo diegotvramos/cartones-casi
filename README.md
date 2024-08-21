@@ -1848,4 +1848,4 @@ Para la descripción podemos ayudarnos de la IA.
 
 > hazme una descripción corta para vender en linea acerca de las Láminas de Cartón Corrugado y también menciona los posibles usos que se le puede dar.
 
-hacer la 140
+hacer separadores de carton 2mm
