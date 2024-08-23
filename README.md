@@ -1991,10 +1991,63 @@ y finalmente obtendremos este hermoso resultado:
 
 ![crendo-logo](/assets/apple-icon.png)
 
+como poner precios?
+
+#### Planes y Precios
+
+##### Plan Básico
+- **Precio**: $19.99/mes
+- **Incluye**: Acceso a todas las funciones básicas, soporte 24/7
+
+##### Plan Premium
+- **Precio**: $49.99/mes
+- **Incluye**: Todas las funciones del Plan Básico, más acceso a funciones avanzadas, soporte prioritario
+
+##### Oferta Especial
+- **Descuento**: 20% de descuento en tu primer mes si te suscribes hoy
+
+
+
+¡Entendido! Aquí tienes algunas ideas para comunicar claramente tus precios y condiciones de envío en tu página web:
+
+### Precios y Condiciones de Envío
+
+#### Compra al por mayor
+- **Precio por unidad**: $X.XX
+- **Oferta especial**: **Envío gratuito** para pedidos de **más de 50 unidades**.
+
+#### Compra al por menor
+- **Precio por unidad**: $X.XX
+- **Condiciones de envío**: Para pedidos de **menos de 50 unidades**, por favor recoge tu pedido directamente en nuestro depósito.
+
+
+dame ideas para poner precio; si el cliente va llevar más de 50 unidades de cajas de cartón, el envio es gratuito, si el cliente quiere menos de esa cantidad, tendrá que venir directamente al local o tienda (en este caso mi depósito).
+
+
+### Ejemplo de presentación
+
+```
+### Precios y Condiciones de Envío
+
+#### Compra al por mayor
+- **Precio por unidad**: $2.50
+- **Oferta especial**: **Envío gratuito** para pedidos de **más de 50 unidades**.
+
+#### Compra al por menor
+- **Precio por unidad**: $3.00
+- **Condiciones de envío**: Para pedidos de **menos de 50 unidades**, por favor recoge tu pedido directamente en nuestro depósito.
+
+**Dirección del depósito**: Calle Ejemplo 123, La Paz, Bolivia
+```
+
+### Llamadas a la acción
+- "Compra ahora y aprovecha el envío gratuito"
+- "Haz tu pedido al por mayor y ahorra en envío"
+- "Recoge tu pedido en nuestro depósito para cantidades menores"
 
 
 
 
 
-
+modificar precio para los productos. ejemplo berricap.
 
