@@ -504,7 +504,7 @@ cuando sea target de la página aplicale:*/
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1s ease;
+  /* transition: opacity 1s ease; */
 }
 
 .slider-slide img{

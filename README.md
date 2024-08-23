@@ -1927,10 +1927,69 @@ Claro, para ajustar los tamaños de los elementos según lo que necesitas, puede
 
 Con estos cambios, el primer y tercer elemento ocuparán un 20% del espacio cada uno, y el segundo elemento ocupará el 60% restante.
 
+#### Generando un logo apartir de la Inteligencia Artificial.
 
 
+**PASO 1**
+
+https://www.bing.com/images/create
+
+Genera un logotipo simple y elegante que represente la silueta de una caja de cartón reciclada, utilizando un enfoque minimalista con líneas limpias, utilizando únicamente el color dorado en un fondo negro.
+
+**PASO 2**
+
+> SI LA IMAGEN DESCARGADA ES .JFIF CONVIERTELA EN .PNG con Paint. Si este no es el caso, omite este paso.
+
+**PASO 3**
+
+Poner fondo transparente a una imagen en línea gratis
+
+Nuestra herramienta de removedor de fondos hace que sea muy fácil ponerle un fondo transparente a cualquier imagen que tengas. Inténtalo gratis aquí.
+
+https://www.pixelcut.ai/es/
+https://www.pixelcut.ai/t/background-remover 
+
+![crendo-logo](/assets/logo-2-cartones.png)
 
 
+**PASO 4**
+
+> Sí la imagen tiene muchos espacio en los bordes lo recortamos en forma cuadrada. siempre haciendo sobrar 1cm por lo menos.
+
+**PASO 5**
+
+
+dime como puedo hacer un favicon.
+
+¡Claro! Aquí tienes algunas formas de crear un favicon:
+
+1. **Usar un Generador de Favicons**:
+   - **[favicon.io](https://favicon.io/)**: Puedes generar un favicon a partir de texto, imagen o elegir entre cientos de emojis¹.
+   - **[favicon-generator.org](https://www.favicon-generator.org/)**: Sube una imagen (PNG, JPG, GIF) y conviértela en un favicon.ico².
+
+2. **Crear tu Propio Favicon**:
+   - **Diseño Personalizado**: Usa un programa de diseño gráfico como Adobe Photoshop o GIMP para crear una imagen de 16x16 píxeles.
+   - **Convertir a ICO**: Usa una herramienta en línea para convertir tu imagen a formato ICO, como [favicon.cc](https://www.favicon.cc/)³.
+
+3. **Agregar el Favicon a tu Sitio Web**:
+   - Guarda el archivo favicon.ico en el directorio raíz de tu sitio web.
+   - Añade el siguiente código en la sección `<head>` de tu HTML:
+     ```html
+     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+     ```
+
+Estas opciones te permitirán crear y agregar un favicon a tu sitio web de manera sencilla. 
+
+llego el momento de convertirlo a tamaños recomendados: 
+
+entonces usamos: `https://www.favicon-generator.org/`
+
+SUBIMOS LA IMAGEN PNG Y ESTA PÁGINA SE ENCARGARÁ DE CONVERTIR ESA IMAGEN EN VARIOS TAMAÑOS.
+
+y finalmente obtendremos este hermoso resultado:
+
+![crendo-logo](/assets/apple-icon.png)
 
 
 
