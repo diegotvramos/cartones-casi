@@ -1848,4 +1848,94 @@ Para la descripción podemos ayudarnos de la IA.
 
 > hazme una descripción corta para vender en linea acerca de las Láminas de Cartón Corrugado y también menciona los posibles usos que se le puede dar.
 
-hacer separadores de carton 2mm
+que hacer cuando me aparece este error en Github: fatal: not a git repository (or any of the parent directories): .git
+
+Este error generalmente ocurre cuando intentas ejecutar un comando de Git fuera de un repositorio de Git. Aquí hay algunos pasos que puedes seguir para solucionarlo:
+
+1. **Verifica tu directorio actual**:
+   Asegúrate de estar en el directorio correcto donde se encuentra tu repositorio de Git. Puedes usar el comando `pwd` (en Unix/Linux) o `cd` (en Windows) para verificar tu ubicación actual.
+
+2. **Comprueba si el repositorio está inicializado**:
+   Ejecuta `ls -la` (en Unix/Linux) o `dir` (en Windows) para ver si hay una carpeta `.git` en tu directorio actual. Si no existe, necesitas inicializar el repositorio con `git init`².
+
+3. **Revisa la ruta del repositorio**:
+   Asegúrate de no haber escrito mal la ruta al repositorio. Verifica que estás en el directorio correcto y que la ruta es precisa².
+
+4. **Corrige el archivo HEAD**:
+   Si el archivo `.git/HEAD` está dañado, puedes intentar restaurarlo. Abre el archivo `.git/HEAD` y asegúrate de que apunte a la rama correcta, por ejemplo, `ref: refs/heads/main`¹.
+
+5. **Inicializa el repositorio**:
+   Si no has inicializado el repositorio, puedes hacerlo con `git init` o clonando un repositorio existente con `git clone <url-del-repositorio>`².
+
+
+hazme una descripción de un carton separador de 2mm de grosor y un largo de 1metro y de alto 120cm es un carton prensado, quiere decir que no tiene corugado en su interior.  Y al final ponme los posibles usos que se le puede dar, todo esto es para venderlo en el Facebook
+
+
+Para intercambiar las posiciones de `item1` y `item2`, puedes usar la propiedad `grid-area` para especificar la ubicación de cada elemento en la cuadrícula. Aquí tienes el código modificado:
+
+```css
+.item1 {
+  grid-column: 2; /* Cambia la posición de item1 a la columna 2 */
+  /* grid-row: 1; */
+}
+
+.item2 {
+  grid-column: 1; /* Cambia la posición de item2 a la columna 1 */
+  grid-row: 1; /*se formó dos filas y quero que esté todo en la primera fila.*/
+}
+
+.item3 {
+  grid-column: 3;
+}
+.container-product {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  column-gap: 5rem;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 25% 35% 25%;
+  /*grid-template-rows: repeat(2, 1fr); /* Añadimos una segunda fila NO ES NECESARIO */
+}
+```
+de este fragmento quiero que el primer elemento ocupen un espacio del 20% el segundo un espacio del 60% y el tercero un espacio de 20%, modifica este fragmento de código
+
+```CSS
+.about-lg{
+  height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  /* display: flex; */
+  align-content: center;
+}
+```
+Con estos cambios, `item1` tomará el lugar de `item2` y viceversa. 
+
+
+Claro, para ajustar los tamaños de los elementos según lo que necesitas, puedes modificar la propiedad `grid-template-columns` para que refleje los porcentajes deseados. Aquí tienes el código modificado:
+
+```css
+.about-lg {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  column-gap: 2rem;
+  align-content: center;
+}
+```
+
+Con estos cambios, el primer y tercer elemento ocuparán un 20% del espacio cada uno, y el segundo elemento ocupará el 60% restante.
+
+
+
+
+
+
+
+
+
+
+
+
+

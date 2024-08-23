@@ -20,7 +20,7 @@ export default function slider() {
     const startInterval = () => {
         interval = setInterval(() => {
             changeSlide(1);
-        }, 3000);
+        }, 5000);
     };
 
     const resetInterval = () => {
