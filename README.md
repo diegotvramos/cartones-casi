@@ -2051,3 +2051,10 @@ dame ideas para poner precio; si el cliente va llevar más de 50 unidades de caj
 
 modificar precio para los productos. ejemplo berricap.
 
+
+> para agregar un nuevo producto debes agregarlo en la página `productos.html` y debes crear la núeva página del producto.
+
+¿Cómo lo creo?
+
+usas la plantilla de otro producto cambias el nombre y lo enlazas en `productos.html`. 👏
+
