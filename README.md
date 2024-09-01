@@ -3,6 +3,8 @@
 ## CARTONES - CASI
 
 
+[link](https://diegotvramos.github.io/cartones-casi/)
+
 "empesar de los contornos e ir hacia adentro primero html y despues css y depues JS"
  
 "y empesar por la verción _mobile_, SIEMPRE"
