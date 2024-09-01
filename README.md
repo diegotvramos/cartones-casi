@@ -2066,3 +2066,8 @@ el tamaño para las imagenes afecta en el rendimiento (a la hora de cargar la p�
 
 > 1x1 => cuadrada: 1280px.
 
+Mira que tarda casi 5 segundos en cargar la página sin cambir el tamaño de las imágenes.
+
+![imagen-de la tardanza](image.png)
+
+
