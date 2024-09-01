@@ -2070,4 +2070,46 @@ Mira que tarda casi 5 segundos en cargar la página sin cambir el tamaño de las
 
 ![imagen-de la tardanza](image.png)
 
+---
+
+hola, hazme una pequeña descripción para vender cartones usados de todo tamaño, en el cátalogo indica la cantidad minima para envio gratuito para cada producto, que sea amigable, llamativo, que contenga un número de referencia para llamadas y Whatsapp, y que tenga el link de el catálogo (es una simple página html hecha por mí)
+
+¡Hola! Aquí tienes una descripción amigable y llamativa para vender tus cartones usados de todo tamaño, incluyendo la información sobre el envío gratuito:
+
+---
+
+**¡Encuentra el cartón perfecto para tus necesidades!** 📦🌟
+
+¿Buscas cartones de calidad en diferentes tamaños? ¡Tenemos justo lo que necesitas! Ofrecemos cartones usados en excelente estado, ideales para mudanzas, almacenamiento y más. Al elegir nuestros cartones, no solo ahorras dinero, sino que también ayudas a cuidar el medio ambiente. 🌱
+
+**¿Por qué elegirnos?**
+- **Variedad de tamaños:** Cartones disponibles en todas las dimensiones que puedas necesitar.
+- **Precios accesibles:** Ahorra más comprando cartones reutilizados.
+- **Sostenibilidad:** Contribuye a reducir el desperdicio y apoya el reciclaje.
+- **Envío gratuito:** Consulta nuestro catálogo para conocer la cantidad mínima requerida para envío gratuito en cada producto.
+
+**Contáctanos ahora!**
+📞 **Llamadas y WhatsApp:** +591 123 456 789
+📄 **Catálogo completo:** [Visita nuestro catálogo](http://tucatalogo.com)
+
+---
+
+
+
+
+
+
+
+
+Para acortar tus enlaces, puedes usar varias herramientas en línea que son fáciles de usar y gratuitas. Aquí te dejo algunas opciones populares:
+
+1. **Bitly**: Es uno de los acortadores de URL más conocidos. Puedes personalizar tus enlaces y obtener estadísticas detalladas sobre los clics.
+2. **TinyURL**: Permite acortar enlaces rápidamente sin necesidad de registrarse. 🤗👏👏
+3. **N9.cl**: Ofrece la opción de personalizar tus enlaces y generar códigos QR¹.
+4. **LC.cx**: Además de acortar enlaces, te permite crear códigos QR personalizados y gestionar tus enlaces con estadísticas detalladas².
+
+Solo necesitas copiar tu enlace largo, pegarlo en la herramienta de tu elección y hacer clic en "Acortar". ¡Así de simple!
+
+¿Te gustaría que te ayude a acortar un enlace específico? 😊
+
 
