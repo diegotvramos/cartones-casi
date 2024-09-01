@@ -2060,3 +2060,9 @@ modificar precio para los productos. ejemplo berricap.
 
 usas la plantilla de otro producto cambias el nombre y lo enlazas en `productos.html`. 👏
 
+el tamaño para las imagenes afecta en el rendimiento (a la hora de cargar la página); por eso usaremos medidas estandar:
+
+> 16:9 => horizontal: 1920px. 
+
+> 1x1 => cuadrada: 1280px.
+
