@@ -4,6 +4,7 @@
 import menu from "./menu.js";
 import slider from "./carousel.js";
 import contact from "./form.js";
+import actualizarFecha from "./actualizarFecha.js";
 
 
 
@@ -34,6 +35,16 @@ d.addEventListener("DOMContentLoaded", (e) => {
         console.error("Error en slider:", error);
     }
 
+    try {
+        actualizarFecha();
+    } catch (error) {
+        console.error("Error en actualizarFecha:", error);
+    }
+
+    // Actualizar el año en el pie de página
+    const yearElement = document.getElementById('current-year');
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
     
 });
 

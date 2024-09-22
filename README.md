@@ -2113,3 +2113,19 @@ Solo necesitas copiar tu enlace largo, pegarlo en la herramienta de tu elección
 ¿Te gustaría que te ayude a acortar un enlace específico? 😊
 
 
+> creo que el nombre de los productos tienen que ser únicos y recordables
+
+hablando con copilot:
+
+> tengo una mejor idea. quiero que a cualquier cambio que le haga al contenido por más minomo que sea. en la parte superior de el contenido de la página productos.html colocale: "Última actualización: fecha de la actualización" con javascript, ¿se puede hacer esto?
+
+> quiero que me lo importes a este archivo (es un archivo de puro módulos js): 
+
+```js
+// importándo módulos
+import menu from "./menu.js";
+import slider from "./carousel.js";
+import contact from "./form.js";
+```
+
+> tambien quiero que a mi archivo 'productos.html' en el pie de página le pongas esto el año actual asi como el que tienen muchas páginas pero el mio está alojado en github por lo que dedusco que no tiene que tener copyrigt. ¿o sí? (me generó los dos archivos pero no modularizó.)
