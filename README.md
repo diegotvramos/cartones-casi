@@ -2129,3 +2129,55 @@ import contact from "./form.js";
 ```
 
 > tambien quiero que a mi archivo 'productos.html' en el pie de página le pongas esto el año actual asi como el que tienen muchas páginas pero el mio está alojado en github por lo que dedusco que no tiene que tener copyrigt. ¿o sí? (me generó los dos archivos pero no modularizó.)
+
+
+>hola me puedes ayudar con estos dos archivos? (te enviaré los dos archivos, espera) un archivo se llama "productos.html y tiene el siguiente contenido":
+
+>el otro archivo se llama actualizarfecha.js (es un archivo que se encarga de detectar cambios dentro del body de mi contenido html) el problema es que me muestra la fecha de hoy sin que haya yo tocado el contenido html, pienso que puede ser que se autodetacta en la parte de  "Última actualizacion:" de html, bueno te envio mi código javascript: 
+
+
+> a que te refires con el contenido del ``<body>`` ? por favor.
+
+Claro, me refiero a cualquier cambio que hagas dentro de las etiquetas `<body>` de tu archivo HTML. Esto incluye agregar, eliminar o modificar elementos como texto, imágenes, enlaces, secciones, etc.
+
+Por ejemplo, en tu archivo HTML:
+
+```html
+<body>
+    <main class="bg-color-main">
+        <section class="section container">
+            <article class="text-center">
+                <h1 class="section-title">Productos</h1>
+                <i>
+                    <div id="ultima-actualizacion">Última actualización: </div>
+                </i>
+            </article>
+        </section>
+
+        <section>
+            <article class="card p-0">
+                <a href="exportación.html" class="img-card-container">
+                    <img src="assets/productos/exportacion-1.jpg" class="img-zoom" alt="imagen de exportacion-1">
+                </a>
+                <div class="card-container">
+                    <h3 class="text-center">Exportación 📦</h3>
+                    <small class="color-list">
+                        <ul>
+                            <li class="mb-2">
+                                <b>Stock: </b>Disponible
+                            </li>
+                            <li class="mb-2">
+                                <a href="exportación.html">Ver más</a> 👈
+                            </li>
+                        </ul>
+                    </small>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+```
+
+Si agregas un nuevo producto, cambias el texto de "Stock: Disponible" a "Stock: Agotado", o haces cualquier otra modificación dentro de estas etiquetas `<body>`, eso contaría como un cambio en el contenido del `<body>`.
+
+¿Te queda más claro ahora? ¿Hay algo más en lo que pueda ayudarte? 😊
